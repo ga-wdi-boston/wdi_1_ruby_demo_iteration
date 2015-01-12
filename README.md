@@ -74,17 +74,17 @@ So if you want to loop over a collection, and so something with each element, an
 
 ### Each vs Map
 
-`each` doesn't really *return* anything useful to us as a value.
-`map` returns the result of each block (the last line) as a new array without altering the original collection.
+- `each` doesn't really *return* anything useful to us as a value.
+- `map` returns the result of each block (the last line) as a new array without altering the original collection.
 
-`each` encourages mutation of data, and lets people get in the habit of doing multiple things in the block since the return value of the block doesn't matter.
-`map` makes you laser focus on one task, and discourages mutation of data. This will lead to fewer bugs in the long term.
+- `each` encourages mutation of data, and lets people get in the habit of doing multiple things in the block since the return value of the block doesn't matter.
+- `map` makes you laser focus on one task, and discourages mutation of data. This will lead to fewer bugs in the long term.
 
-`each` is harder to test, since you might be doing multiple things in it, which probably have side-effects.
-`map` is really easy to test, making coding quicker and fewer bugs
+- `each` is harder to test, since you might be doing multiple things in it, which probably have side-effects.
+- `map` is really easy to test, making coding quicker and fewer bugs
 
-`each` is boring, but overused. Only really use it for outputting Rails Views next week.
-`map` has some neat tricks, and is a common pattern in *functional programming*
+- `each` is boring, but overused. Only really use it for outputting Rails Views next week.
+- `map` has some neat tricks, and is a common pattern in *functional programming*
 
 #### Neat Tricks with Map
 
